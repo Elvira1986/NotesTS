@@ -1,28 +1,30 @@
-# React + TypeScript + Vite
+# NotesTS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is app build in TypeScript React
 
-Currently, two official plugins are available:
+### To get your local copy, use terminal:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+`git clone https://github.com/Elvira1986/NotesTS.git` - to clone this repository to your local computer;
+`cd NotesTS` - get inside of the path project
+`npm install` -install and manage packages (dependencies) for Node Package Manager
 
-## Expanding the ESLint configuration
+### To get additional packages for project:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+`npm i react-bootstrap bootstrap react-router-dom` - adding bootstrap and routing dependecies
+`npm i uuid` - install id
 
-- Configure the top-level `parserOptions` property like this:
+`npm run dev` - run app locally on port `http://localhost:5173/`
 
 ```js
 export default tseslint.config({
   languageOptions: {
     // other options...
     parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
       tsconfigRootDir: import.meta.dirname,
     },
   },
-})
+});
 ```
 
 - Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
@@ -31,11 +33,11 @@ export default tseslint.config({
 
 ```js
 // eslint.config.js
-import react from 'eslint-plugin-react'
+import react from "eslint-plugin-react";
 
 export default tseslint.config({
   // Set the react version
-  settings: { react: { version: '18.3' } },
+  settings: { react: { version: "18.3" } },
   plugins: {
     // Add the react plugin
     react,
@@ -44,8 +46,9 @@ export default tseslint.config({
     // other rules...
     // Enable its recommended rules
     ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
+    ...react.configs["jsx-runtime"].rules,
   },
-})
+});
 ```
+
 # NotesTS
