@@ -12,6 +12,7 @@ This is app build in TypeScript React
 
 `npm i react-bootstrap bootstrap react-router-dom` - adding bootstrap and routing dependecies
 `npm i uuid` - install id
+`npm i react-markdown` - to install markdown
 
 `npm run dev` - run app locally on port `http://localhost:5173/`
 
